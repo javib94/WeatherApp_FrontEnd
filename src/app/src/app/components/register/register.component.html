@@ -1,0 +1,49 @@
+<div class="col-sm-8 center-div" >
+    <div class="card text-center" >
+        <div class="card-header">
+            <h1>Registro</h1>
+        </div>
+        <div class="card-body">
+            <form>
+                <div class="card-body">
+                    <div class="form-group">
+                        <label for="idEmail">Nombre</label>
+                        <div class="input-group mb-3">
+                            <input type="email" class="form-control" placeholder="Nombre" name="correo" [(ngModel)]="name">                            
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="idEmail">Correo Eléctronico</label>
+                        <div class="input-group mb-3">
+                            <input type="email" class="form-control" placeholder="Correo" name="correo" [(ngModel)]="email">                            
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="idEmail">País</label>
+                        <div class="input-group mb-3">
+                            <input type="email" class="form-control" placeholder="País" name="correo" [(ngModel)]="country">                            
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="idPassword">Contraseña</label>
+                        <div class="input-group mb-3">
+                            <input type="password" class="form-control" placeholder="Password" name="clave" [(ngModel)]="password">
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="card-footer">
+                    <div class="container">
+                        <div class="row justify-content-center" style="margin-bottom:10px;">
+                            <button type="submit" class="btn btn-block" style="background-color:#48C9B0; color: white;" (click)="register()">Registrar usuario</button>
+                        </div>
+                        <div class="row justify-content-center" style="margin-bottom:10px;">
+                            <button class="btn btn-block" style="background-color: #1f618d; color: white;" routerLink="/login">Login</button>
+                        </div>
+                    </div>
+                   
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
