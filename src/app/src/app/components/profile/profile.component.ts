@@ -12,9 +12,11 @@ export class ProfileComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    this.setValues();
   }
 
   setValues(){
-    
+    this.name = localStorage.getItem("name") || "User name";
+    this.email = localStorage.getItem("username") || "test@gmail.com";
   }
 }
