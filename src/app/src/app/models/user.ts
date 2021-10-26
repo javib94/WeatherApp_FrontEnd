@@ -2,8 +2,8 @@ export interface User {
     username:string,
     name:string,
     password:string,
-    latitud:string,
-    longitud:string
+    latitud:number,
+    longitud:number
 }
 
 export interface UserQuerie {

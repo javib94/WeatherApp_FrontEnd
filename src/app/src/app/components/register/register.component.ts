@@ -12,16 +12,16 @@ import { UserServiceService } from "../../services/user-service/user-service.ser
 export class RegisterComponent implements OnInit {
   public name:string = "";
   public email: string = "";
-  public latitud: string = "";
-  public longitud: string = "";
+  public latitud: number = -1;
+  public longitud: number = -1;
   public password: string = "";
 
   public new_user: User = {
     name: "",
     username: "",
     password: "",
-    longitud: "",
-    latitud: ""
+    longitud: -1,
+    latitud: -1
   }
   
   constructor(private router: Router, private user_service: UserServiceService) { }
@@ -32,7 +32,8 @@ export class RegisterComponent implements OnInit {
   register(){
     //Get location of user
     this.getLocation();
-    
+    this.longitud = 14.618901;
+    this.latitud = -90.500116;
     /*console.log(this.name);
     console.log(this.email);
     console.log(this.latitud);
