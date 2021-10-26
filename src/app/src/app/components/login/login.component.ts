@@ -41,7 +41,7 @@ export class LoginComponent implements OnInit {
         localStorage.setItem("username", data.username);
         localStorage.setItem("name", data.name);
         localStorage.setItem("longitud", data.longitud);
-        localStorage.setItem("longitud", data.latitud);
+        localStorage.setItem("latitud", data.latitud);
       },
       error => {
         console.log(error);

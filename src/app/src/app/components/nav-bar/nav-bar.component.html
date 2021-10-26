@@ -14,7 +14,7 @@
         <form class="d-flex">
           <button class="btn btn-secondary my-2 my-sm-0" *ngIf="!isLogged" routerLink="/login">Login</button>
           <button class="btn btn-secondary my-2 my-sm-0" *ngIf="!isLogged" routerLink="/register">Register</button>
-          <button class="btn btn-secondary my-2 my-sm-0" *ngIf="isLogged" routerLink="/login">Logout</button>
+          <button class="btn btn-secondary my-2 my-sm-0" *ngIf="isLogged" (click)="logout()" routerLink="/login">Logout</button>
         </form>
       </div>
     </div>

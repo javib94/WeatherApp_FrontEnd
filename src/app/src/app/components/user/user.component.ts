@@ -29,10 +29,12 @@ export class UserComponent implements OnInit {
     this.user_querie.username = localStorage.getItem("username") || "";
     this.user_querie.latitud = localStorage.getItem("latitud") || "";
     this.user_querie.longitud = localStorage.getItem("longitud") || "";
+    console.log(this.user_querie);
     this.user_service.currentWeather(this.user_querie)
     .subscribe(
       res => {
         data = res;
+        console.log(data);
         this.name_preference = data.name;
         this.weather_type = data.weather[0].description;
         this.temp_max = data.main.temp_max;
