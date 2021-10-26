@@ -32,11 +32,16 @@ export class LoginComponent implements OnInit {
     this.data_user.username = this.email;
     this.data_user.password = this.password
 
+    let data: any; 
     //Call the function to Login
     this.user_service.login(this.data_user)
     .subscribe(
       res => {
-        console.log(res);
+        data = res;
+        localStorage.setItem("username", data.username);
+        localStorage.setItem("name", data.name);
+        localStorage.setItem("longitud", data.longitud);
+        localStorage.setItem("longitud", data.latitud);
       },
       error => {
         console.log(error);
