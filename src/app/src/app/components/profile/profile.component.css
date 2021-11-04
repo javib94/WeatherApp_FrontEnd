@@ -1,0 +1,17 @@
+.center-div {
+    padding-left: 30%; 
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+h1 {
+    color: darkblue;
+}
+
+label {
+    color: darkmagenta
+}
+
+input {
+    text-indent: 10px;
+}
