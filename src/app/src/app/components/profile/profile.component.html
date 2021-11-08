@@ -1,1 +1,37 @@
-<p>profile works!</p>
+<div class="col-sm-8 center-div" >
+    <div class="card text-center" >
+        <div class="card-header">
+            <h1>{{name}}</h1>
+        </div>
+        <div class="card-body">
+            <form>
+                <div class="card-body">
+                    <div class="form-group">
+                        <label for="idEmail">Correo Eléctronico</label>
+                        <div class="input-group mb-3">
+                            <input type="email" class="form-control" placeholder="Correo" name="correo" value={{email}} disabled="">                            
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="idEmail">País</label>
+                        <div class="input-group mb-3">
+                            <input type="email" class="form-control" placeholder="País" name="correo" value={{country}} disabled="">                            
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="card-footer">
+                    <div class="container">
+                        <div class="row justify-content-center" style="margin-bottom:10px;">
+                            <button type="submit" class="btn btn-block" style="background-color:#48C9B0; color: white;" routerLink="/user/preference">Establecer preferencias</button>
+                        </div>
+                        <div class="row justify-content-center" style="margin-bottom:10px;">
+                            <button class="btn btn-block" style="background-color: #1f618d; color: white;" routerLink="/user">Visualizar información del clima</button>
+                        </div>
+                    </div>
+                   
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
