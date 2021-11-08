@@ -10,7 +10,7 @@ RUN npm i && npm run build
 # Segundo stage creado
 FROM nginx:1.13.9-alpine
 
-COPY  --from=builder app/dist/ /usr/share/nginx/html
+COPY  --from=builder app/dist/weather-app /usr/share/nginx/html
 
 COPY ./nginx.conf /etc/nginx/conf.d/default.conf
 
