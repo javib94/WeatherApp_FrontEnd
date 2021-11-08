@@ -8,7 +8,7 @@ pipeline {
             steps {
                 echo "Realizando build previo a la subida"
                 sh '''
-                    docker build -t weatherapp_frotend .
+                    docker build -t weatherapp_frontend .
                 '''
             }
         }
@@ -20,8 +20,8 @@ pipeline {
                 echo "Tag and Push"
                 sh '''
                     docker login --username jacevel97 --password carlosveliz97
-                    docker tag weatherapp_frotend jacevel97/weatherapp_frotend:latest
-                    docker push jacevel97/weatherapp_frotend:latest
+                    docker tag weatherapp_frontend jacevel97/weatherapp_frontend:latest
+                    docker push jacevel97/weatherapp_frontend:latest
                 '''
             }
         }
