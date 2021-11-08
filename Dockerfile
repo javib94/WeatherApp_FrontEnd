@@ -1,5 +1,5 @@
 # Se nombra este stage del docker como builder
-FROM node:10 AS builder
+FROM node:14 AS builder
 
 WORKDIR /app
 
