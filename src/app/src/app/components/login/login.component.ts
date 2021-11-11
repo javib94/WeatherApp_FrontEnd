@@ -38,15 +38,21 @@ export class LoginComponent implements OnInit {
     .subscribe(
       res => {
         data = res;
-        localStorage.setItem("username", data.username);
-        localStorage.setItem("name", data.name);
-        localStorage.setItem("longitud", data.longitud);
-        localStorage.setItem("latitud", data.latitud);
+        if(data.username != undefined){
+          localStorage.setItem("username", data.username);
+          localStorage.setItem("name", data.name);
+          localStorage.setItem("longitud", data.longitud);
+          localStorage.setItem("latitud", data.latitud);
+          this.router.navigate(['/profile']);
+        }
+        else {
+          alert("Los datos ingresados son incorrectos");
+          this.router.navigate(['/login']);
+        }
       },
       error => {
         console.log(error);
       }
     );
-    this.router.navigate(['/profile'])
   }
 }
