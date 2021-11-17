@@ -5,7 +5,7 @@
 export const environment = {
   production: false,
   apiUrl: 'http://35.229.71.118:5000/',
-  mapboxKey: 'pk.eyJ1IjoiamFjZXZlbDk3IiwiYSI6ImNrdjk1NWs1cWEwMXUybnFqZ3hhOGZ6azYifQ.NCUwoGJ8-fVJOjaky-eTyA'
+  mapboxKey: 'pk.eyJ1IjoiamFjZXZlbDk3IiwiYSI6ImNrdzJwdjV5aTBlcGIyd21uY3JlYThzZzAifQ.eHy7cwD5Zu5G6AMI_-Y-oA'
 };
 
 /*
